@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@500&family=Ubuntu:wght@500&display=swap");
+@import url("../style/achivements.css");
+@import url("../style/form.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+#head_contact {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 1rem;
+}
+#head_contact #contactus {
+  display: flex;
+  gap: 1rem;
+}
+
+#contactus p {
+  color: darkslategray;
+  letter-spacing: 1px;
+  margin-left: 12px;
+}
+
+#contactus div {
+  display: flex;
+}
+
+#head_contact div i {
+  color: darkslategray;
+  font-size: 1.2rem;
+}
+
+#navbar {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background: white;
+  align-items: center;
+  padding: 0.8rem 1.8rem;
+  z-index: 10;
+}
+
+.logo img {
+  height: 2.5rem;
+}
+
+#check_menu {
+  display: none;
+}
+#hamburger {
+  display: block;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+#hamburger span {
+  display: block;
+  height: 4px;
+  width: 30px;
+  margin: 5px;
+  background: black;
+}
+
+#navigation {
+  /* display: none; */
+  width: 100%;
+  position: absolute;
+  top: 4.7rem;
+  left: -35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+  padding: 1rem 0;
+  padding-top: 1.5rem;
+  background: rgba(0, 0, 0, 0.75);
+  transition: all 0.3s ease-out;
+}
+
+#navigation li {
+  list-style: none;
+}
+
+#navigation li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 1.3px;
+}
+
+#navigation .nav-button {
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+  border: 1px solid white;
+  background: transparent;
+  transition: 0.2s;
+}
+
+#container {
+  margin-top: 7rem;
+}
+
+.header_image {
+  position: relative;
+}
+.header_image img {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+}
+
+#heading {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+#heading h1 {
+  font-size: 3rem;
+}
+
+#heading h1 span {
+  color: #673de6;
+}
+
+/* ------Events and handlers------ */
+
+#social_media a i:hover {
+  color: #673de6;
+  transform: scale(1.1);
+}
+
+#navigation .nav-button:hover {
+  color: white;
+  background: #673de6;
+  border: 1px solid #673de6;
+}
+
+#check_menu:checked + #navigation {
+  left: 0;
+}
+
+/* ------Event classes------- */
+
+.menu_scroll {
+  position: fixed;
+  top: 0;
+  box-shadow: 0 2px 1rem -10px black;
+}
+
+/* -------Media queries------- */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+}
+
+@media (min-width: 768px) {
+  #navbar {
+    justify-content: space-around;
+    padding: 0.8rem 1.8rem;
+  }
+  .logo img {
+    height: 3.5rem;
+  }
+  #hamburger {
+    display: none;
+  }
+  #navigation {
+    padding: 0;
+    flex-direction: row;
+    position: relative;
+    width: max-content;
+    top: 0;
+    left: 0;
+    background: white;
+    font-weight: 500;
+  }
+  #navigation li a {
+    color: black;
+    font-weight: 500;
+  }
+
+  #navigation .nav-button {
+    color: #673de6;
+    border: 1px solid #673de6;
+    padding: 0.7rem 1.5rem;
+  }
+
+  #navigation li a:hover {
+    color: #673de6;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #hamburger {
+    display: none;
+  }
+
+  /* #container {
+    height: 45rem;
+    width: 100%;
+    position: relative;
+    background-image: url("../../images/woman.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 15rem 23rem;
+  }
+
+  #container #heading {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #1c1c1c;
+  } */
+}

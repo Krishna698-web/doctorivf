@@ -3,10 +3,122 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="../src/style/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
     <title>Document</title>
   </head>
   <body>
-    <h1 class="text-green-800 bg-yellow-400">gray</h1>
+    <header class="" id="home">
+      <div id="head_contact">
+        <div id="contactus">
+          <div>
+            <i class="fa-solid fa-phone"></i>
+            <p>+918511703318</p>
+          </div>
+          <div>
+            <i class="fa-regular fa-envelope"></i>
+            <p>dr.vinuta@gmail.com</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation menu -->
+      <nav id="navbar">
+        <div class="logo">
+          <img src="../images/logo.JPG" alt="" />
+        </div>
+        <label id="hamburger" for="check_menu"
+          ><span></span><span></span><span></span
+        ></label>
+        <input type="checkbox" id="check_menu" />
+        <ul id="navigation">
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#">Portfolio</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <button class="nav-button">Contactus</button>
+        </ul>
+      </nav>
+
+      <!-- Achievement Container -->
+      <div id="container">
+        <div class="header_image">
+          <img src="../images/doc.png" alt="" />
+        </div>
+        <div id="heading">
+          <h1>
+            It's not <span>Magic</span> <br />
+            It's <span>Science</span> of
+            <span>IVF</span>
+          </h1>
+        </div>
+        <div></div>
+      </div>
+    </header>
+
+    <div id="achievemets_collection">
+      <div class="card">
+        <i class="fa-solid fa-trophy"></i>
+        <span>7+</span>
+        <p>Years of Experience</p>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-baby-carriage"></i>
+        <span>20+</span>
+        <p>Successful Pregnancies</p>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-medal"></i>
+        <span>95%</span>
+        <p>IVF Success Rate</p>
+      </div>
+    </div>
+
+    <div id="appointment_form">
+      <div class="cover">
+        <form>
+          <h2>Book an appointment today!</h2>
+          <div class="field">
+            <input type="text" placeholder="Name" />
+          </div>
+          <div class="field">
+            <input type="tel" placeholder="Number" />
+          </div>
+          <div class="field">
+            <input type="email" placeholder="Email" />
+          </div>
+          <div class="field">
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Any question?"></textarea>
+          </div>
+          <button>Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div id="social_media">
+        <a href="#"> <i class="fa-brands fa-facebook"></i> </a>
+        <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
+        <a href="#"> <i class="fa-brands fa-linkedin"></i> </a>
+        <a href="#"> <i class="fa-brands fa-twitter"></i> </a>
+      </div>
+    </footer>
+
+    <script src="../src/Home/home.js"></script>
   </body>
 </html>

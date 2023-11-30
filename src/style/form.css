@@ -1,0 +1,50 @@
+#appointment_form {
+  background-image: url("../../images/reception.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#appointment_form .cover {
+  background-color: #1c3f6fdc;
+  padding: 3rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 5px;
+  padding: 1.2rem 2rem;
+  background: white;
+  box-shadow: 2px 2px 1rem -10px black;
+}
+
+form h2 {
+  color: black;
+  font-weight: 200;
+}
+
+form .field input,
+form textarea {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 1rem;
+  border: 1px solid #9ba5b3;
+  border-radius: 3px;
+}
+
+form .field input::placeholder,
+form textarea::placeholder {
+  color: #9ba5b3;
+}
+
+form button {
+  color: white;
+  background: #673de6;
+  border: none;
+  padding: 1rem;
+  border-radius: 5px;
+}
