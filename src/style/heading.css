@@ -1,0 +1,19 @@
+h2.secondary_heading {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  text-align: center;
+  position: relative;
+  color: #082032;
+  padding: 0 1rem;
+  font-family: "B612", sans-serif;
+}
+
+h2.secondary_heading span {
+  display: block;
+  height: 12px;
+  margin: 0 auto;
+  position: relative;
+  z-index: -1;
+  transform: translateY(-12px);
+  background: #fcd675de;
+}

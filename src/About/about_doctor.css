@@ -1,0 +1,92 @@
+@import url("../style/home.css");
+@import url("../style/heading.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  background: #f7fbff;
+}
+
+.docpic {
+  margin-top: 5rem;
+  padding: 1rem;
+  position: relative;
+}
+
+.docpic img {
+  width: 100%;
+}
+
+.docpic .quote {
+  position: absolute;
+  bottom: -1rem;
+  left: 2rem;
+  width: 80%;
+  border-radius: 4px;
+  padding: 8px 14px;
+  background: white;
+}
+
+.docpic .quote i {
+  font-size: 1.5rem;
+  color: #0ed3b0;
+}
+
+.quote p {
+  font-size: 1rem;
+  color: #343d48;
+  padding: 8px;
+}
+
+.quote span {
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+  color: #4e97fd;
+}
+
+.about_doctor .description {
+  margin-top: 1rem;
+  padding: 2rem;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* .introduction h2 span {
+  width: 8rem;
+} */
+
+.introduction p {
+  color: #343d48;
+}
+.introduction p span {
+  color: #673de6;
+  /* color: #00316e; */
+  font-weight: 600;
+  text-decoration: underline;
+  font-size: 1.2rem;
+}
+
+.description h3 {
+  color: #00316e;
+  padding-left: 3px;
+}
+
+.experience ul,
+.education ul {
+  padding: 1rem 1.5rem;
+}
+
+.experience ul li,
+.education ul li {
+  list-style: circle;
+  margin: 5px 0;
+  color: #343d48;
+}

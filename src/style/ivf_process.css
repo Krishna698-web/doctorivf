@@ -1,0 +1,48 @@
+.ivf_process {
+  margin-top: 4rem;
+}
+
+.procedure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  background: #f7fbff;
+}
+
+.ivf_process h2 span {
+  width: 18rem;
+}
+
+.step {
+  width: 95%;
+  text-align: center;
+  border-radius: 5px;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.step img {
+  height: 5rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.step h3 {
+  font-size: 1.4rem;
+  margin: 10px 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.step p {
+  padding: 0 2rem;
+  font-size: 1.2rem;
+  color: #ea4b6a;
+}

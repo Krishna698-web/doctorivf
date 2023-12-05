@@ -1,0 +1,88 @@
+footer {
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* background-color: #12171F; */
+}
+
+footer .logo img {
+  height: 4rem;
+}
+
+footer #contactus {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 1rem 0;
+}
+
+.phone__email {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.phone__email div {
+  display: flex;
+  font-size: 1.2rem;
+  flex-direction: column;
+}
+
+#social_media {
+  display: flex;
+  gap: 1rem;
+}
+#social_media a {
+  font-size: 2rem;
+  transition: 0.2s;
+  color: #ea4b6a;
+}
+
+.fa-facebook {
+  color: #0866ff;
+}
+.fa-instagram {
+  color: #cd486b;
+}
+
+.fa-linkedin {
+  color: #0077b5;
+}
+
+.fa-twitter {
+  color: #1da1f2;
+}
+
+.location {
+  border-top: 2px solid #343d48;
+  padding: 12px 0;
+  border-bottom: 2px solid #343d48;
+}
+
+.location .address h4 {
+  font-size: 1.3rem;
+}
+
+.location .address p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+/* --------Map routing-------- */
+
+.mapouter {
+  /* padding: 1rem; */
+}
+.mapouter iframe {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  z-index: -1;
+  background: #fff;
+}
+
+/* -----------Events----------- */
+#social_media a:hover {
+  color: #673de6;
+  transform: scale(1.1);
+}

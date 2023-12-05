@@ -1,0 +1,25 @@
+#deliveries {
+  padding: 1rem;
+  margin: 2rem 0;
+}
+
+#deliveries h2 span {
+  width: 15rem;
+}
+
+#deliveries .images {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: center;
+  justify-items: center;
+  gap: 1rem;
+}
+
+#deliveries img {
+  height: 10rem;
+}
+
+#deliveries a.button {
+  margin: 2rem auto;
+}
