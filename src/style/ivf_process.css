@@ -46,3 +46,19 @@
   font-size: 1.2rem;
   color: #ea4b6a;
 }
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+}
+
+@media only screen and (min-width: 768px) {
+  .procedure {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 3rem 10rem;
+  }
+
+  .step {
+    width: 24%;
+    padding: 2rem;
+  }
+}

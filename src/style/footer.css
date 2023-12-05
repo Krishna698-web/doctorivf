@@ -3,7 +3,8 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  /* background-color: #12171F; */
+  background-color: #12171f;
+  font-family: "Nunito" !important;
 }
 
 footer .logo img {
@@ -17,11 +18,17 @@ footer #contactus {
   padding: 1rem 0;
 }
 
+footer #contactus h4,
+footer #contactus a p {
+  color: whitesmoke !important;
+}
+
 .phone__email {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
+
 .phone__email div {
   display: flex;
   font-size: 1.2rem;
@@ -33,24 +40,12 @@ footer #contactus {
   gap: 1rem;
 }
 #social_media a {
-  font-size: 2rem;
+  font-size: 1.2rem;
+  padding: 0.8rem 0.9rem;
+  background: #525a66;
   transition: 0.2s;
-  color: #ea4b6a;
-}
-
-.fa-facebook {
-  color: #0866ff;
-}
-.fa-instagram {
-  color: #cd486b;
-}
-
-.fa-linkedin {
-  color: #0077b5;
-}
-
-.fa-twitter {
-  color: #1da1f2;
+  color: whitesmoke;
+  border-radius: 3px;
 }
 
 .location {
@@ -61,11 +56,15 @@ footer #contactus {
 
 .location .address h4 {
   font-size: 1.3rem;
+  color: whitesmoke !important;
+  font-weight: 400;
 }
 
 .location .address p {
   font-size: 1.2rem;
   margin: 10px 0;
+  font-weight: 400;
+  color: whitesmoke !important;
 }
 
 /* --------Map routing-------- */
@@ -77,12 +76,25 @@ footer #contactus {
   position: relative;
   height: 300px;
   width: 100%;
-  z-index: -1;
+  z-index: 0;
   background: #fff;
 }
 
 /* -----------Events----------- */
 #social_media a:hover {
-  color: #673de6;
+  color: #ea4b6a;
   transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+  footer {
+    /* padding: 2rem 4rem; */
+    flex-direction: row;
+    justify-content: center;
+    gap: 10rem;
+  }
+
+  .location {
+    width: 40%;
+  }
 }

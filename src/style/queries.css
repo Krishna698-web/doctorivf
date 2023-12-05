@@ -76,3 +76,33 @@ details[open] + div.content {
   color: white;
   position: relative;
 }
+
+@media only screen and (min-width: 600px) and (max-width: 79px) {
+}
+
+@media only screen and (min-width: 800px) {
+  .queries_section {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    /* background-color: black; */
+    padding: 2rem 10rem;
+  }
+
+  .queries_section .query_image {
+    width: max-content;
+    width: 50%;
+  }
+  .queries_section .query_image img {
+    width: 100%;
+  }
+
+  .query_section {
+    width: 30%;
+    padding: 2rem 0;
+  }
+
+  .queries_section h2 {
+    font-size: 2rem;
+  }
+}

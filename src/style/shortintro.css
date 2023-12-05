@@ -1,29 +1,71 @@
-.about_doc {
+.about {
   margin-top: 4rem;
   display: flex;
+  width: 100%;
   flex-direction: column;
 }
 
-.about_doc h2 span {
+.about h2 span {
   width: 8rem;
 }
 
-.about_doc .image img {
+.about .image img {
   width: 90%;
 }
 
-.about_doc .description {
+.about .description {
   padding: 1rem 2rem;
   font-size: 1.2rem;
 }
 
-.about_doc .description h3 {
+.about .description h3 {
   font-size: 2rem;
   margin-bottom: 0.6rem;
   color: #343d48;
   font-family: "B612";
 }
 
-.about_doc .description a.button {
+.about .description a.button {
   margin: 1rem 0;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+}
+
+@media only screen and (min-width: 768px) {
+  .about {
+    /* background-color: blue; */
+  }
+
+  .about_doc {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 5rem;
+  }
+
+  .about h2 span {
+    width: 8rem;
+  }
+
+  .about .image img {
+    height: 40rem;
+    width: max-content;
+  }
+
+  .about .description {
+    padding: 0 2%;
+    width: 30%;
+    /* background: blue; */
+  }
+
+  .about .description h3 {
+    font-size: 2.5rem;
+  }
+
+  .description p {
+    margin: 2rem 0;
+    font-size: 1.5rem;
+  }
 }

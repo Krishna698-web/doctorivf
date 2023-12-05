@@ -17,3 +17,17 @@ h2.secondary_heading span {
   transform: translateY(-12px);
   background: #fcd675de;
 }
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+}
+
+@media only screen and (min-width: 768px) {
+  h2.secondary_heading {
+    font-size: 2.5rem;
+  }
+
+  h2.secondary_heading span {
+    height: 15px;
+    transform: translateY(-1.2rem);
+  }
+}
