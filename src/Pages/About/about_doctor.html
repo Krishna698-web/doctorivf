@@ -30,7 +30,7 @@
       <!-- Navigation menu -->
       <nav id="navbar">
         <div class="logo">
-          <img src="../../images/logo.JPG" alt="" />
+          <img src="../../../images/logo.jpg" alt="" />
         </div>
         <label id="hamburger" for="check_menu"
           ><span></span><span></span><span></span
@@ -38,7 +38,7 @@
         <input type="checkbox" id="check_menu" />
         <ul id="navigation">
           <li>
-            <a href="../../index.html">Home</a>
+            <a href="../../../index.html">Home</a>
           </li>
           <li>
             <a href="#">Portfolio</a>
@@ -46,14 +46,17 @@
           <li>
             <a href="../About/about_doctor.html">About</a>
           </li>
-          <button class="nav-button">Contactus</button>
+          <a href="../../Pages/Contactus/contactus.html" class="nav-button"
+            >Contactus</a
+          >
         </ul>
       </nav>
     </header>
+
     <main>
-      <div class="about_doctor">
-        <div class="docpic">
-          <img src="../../images/dr_vinutas_pic.png" alt="" />
+      <section class="about_doctor">
+        <div class="doctor_image">
+          <img src="../../../images/dr_vinutas_pic.png" alt="" />
           <span class="quote">
             <i class="fa-solid fa-quote-left"></i>
             <p>To make "ART" accessible and cost-effective to everyone</p>
@@ -61,7 +64,7 @@
           </span>
         </div>
         <div class="description">
-          <div class="introduction">
+          <div class="section introduction">
             <!-- <h2 class="secondary_heading">About doctor <span></span></h2> -->
             <p>
               <span>Dr Vinuta Kulkarni</span> is an experienced IVF doctor
@@ -70,7 +73,7 @@
               endometriosis, surrogacy, and infertility genetics.
             </p>
           </div>
-          <div class="education">
+          <div class="section education">
             <h3>--Education--</h3>
             <ul>
               <li>
@@ -82,7 +85,7 @@
               <li>RGGWCH , Puducherry , (2012-2014)</li>
             </ul>
           </div>
-          <div class="experience">
+          <div class="section experience">
             <h3>--Experience--</h3>
             <ul>
               <li>
@@ -101,8 +104,9 @@
             </ul>
           </div>
         </div>
-      </div>
+      </section>
     </main>
   </body>
-  <script src="../Home/home.js"></script>
+  <script src="../../Home/home.js"></script>
+  <script src="/src/js/animation_observer.js"></script>
 </html>

@@ -1,5 +1,6 @@
 #appointment_form {
   background-image: url("../../images/reception.jpg");
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,7 +10,7 @@
 
 #appointment_form .cover {
   background-color: #1c3f6fdc;
-  padding: 3rem 2rem;
+  padding: 3rem 1.2rem;
 }
 
 form {
@@ -18,7 +19,7 @@ form {
   justify-content: center;
   gap: 1rem;
   border-radius: 5px;
-  padding: 1.2rem 2rem;
+  padding: 1.2rem 1.5rem;
   background: white;
   box-shadow: 2px 2px 1rem -10px black;
 }

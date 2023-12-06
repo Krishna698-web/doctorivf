@@ -47,6 +47,40 @@
   color: #ea4b6a;
 }
 
+/*-------- Intersection Animation properties-------- */
+.step {
+  opacity: 0;
+  transform: translateY(6rem) scale(0.5);
+  transition: all 0.5s;
+}
+
+.step-2 {
+  transition-delay: 0.1s;
+}
+.step-3 {
+  transition-delay: 0.15s;
+}
+.step-4 {
+  transition-delay: 0.2s;
+}
+.step-5 {
+  transition-delay: 0.25s;
+}
+.step-6 {
+  transition-delay: 0.3s;
+}
+.step-7 {
+  transition-delay: 0.35s;
+}
+.step-8 {
+  transition-delay: 0.4s;
+}
+
+.step_scroll_animation {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
 @media only screen and (min-width: 600px) and (max-width: 767px) {
 }
 
@@ -58,7 +92,7 @@
   }
 
   .step {
-    width: 24%;
+    width: 24rem;
     padding: 2rem;
   }
 }
