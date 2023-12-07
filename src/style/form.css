@@ -9,8 +9,8 @@
 }
 
 #appointment_form .cover {
-  background-color: #1c3f6fdc;
-  padding: 3rem 1.2rem;
+  background-color: rgb(35, 43, 43, 0.6);
+  padding: 2rem 1.2rem;
 }
 
 form {
@@ -20,28 +20,39 @@ form {
   gap: 1rem;
   border-radius: 5px;
   padding: 1.2rem 1.5rem;
-  background: white;
-  box-shadow: 2px 2px 1rem -10px black;
+  font-family: "Ubuntu";
+  /* background: white; */
 }
 
 form h2 {
-  color: black;
-  font-weight: 200;
+  color: white;
+  /* font-weight: 400; */
+  letter-spacing: 0.8px;
+  text-align: center;
+  font-size: 2.5rem;
 }
 
 form .field input,
 form textarea {
   width: 100%;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: bold;
-  padding: 10px 1rem;
-  border: 1px solid #9ba5b3;
+  padding: 12px 1rem;
   border-radius: 3px;
+  border: 1px solid #9ba5b3;
+  box-shadow: 2px 2px 1rem -10px black;
+  outline: none;
+}
+form .field label {
+  color: white;
+  margin-bottom: 3px;
 }
 
 form .field input::placeholder,
 form textarea::placeholder {
   color: #9ba5b3;
+  font-weight: 400;
+  font-size: 0.8rem;
 }
 
 form button {
@@ -61,7 +72,7 @@ form button {
 
 @media only screen and (min-width: 800px) {
   #appointment_form .cover {
-    padding: 7rem 0;
+    padding: 4rem 0;
     margin-top: 5rem;
   }
 
@@ -73,7 +84,7 @@ form button {
 
   form .field input,
   form textarea {
-    padding: 1rem;
+    /* padding: 12px 1rem; */
     font-size: 1.1rem;
   }
 }

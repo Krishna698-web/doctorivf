@@ -35,9 +35,9 @@
 
       <!-- Navigation menu -->
       <nav id="navbar">
-        <div class="logo">
+        <a href="#" class="logo">
           <img src="../images/logo.JPG" alt="" />
-        </div>
+        </a>
         <label id="hamburger" for="check_menu"
           ><span></span><span></span><span></span
         ></label>
@@ -47,7 +47,7 @@
             <a href="#">Home</a>
           </li>
           <li>
-            <a href="#">Portfolio</a>
+            <a href="#">Services</a>
           </li>
           <li>
             <a href="/src/Pages/About/about_doctor.html">About</a>
@@ -60,10 +60,12 @@
 
       <div id="container">
         <div class="header_image">
+          <div class="dummy_doctor">
+            <img src="/images/doc.png" alt="" />
+          </div>
           <div class="dummy dummy-1">
             <img src="/images/vectors/stethoscope.png" alt="" />
           </div>
-          <img src="../images/doc.png" alt="" />
           <div class="dummy dummy-2">
             <img src="/images/vectors/pregnant.png" alt="" />
           </div>
@@ -173,14 +175,16 @@
             <img src="../images/dr_vinuta.png" alt="" />
           </div>
           <div class="description">
-            <h3>Dr. Vinuta Kulkarni</h3>
-            <p>
+            <h3 class="intro_text">Dr. Vinuta Kulkarni</h3>
+            <p class="intro_text">
               She is a young dedicated infertility specialist with miraculous
               results and success stories in patient with difficult infertility
               journey. She has achieved great success in difficult IUI,
               IVF/TESA, ICSI conception and surrogacies.
             </p>
-            <a class="button" href="/src/Pages/About/about_doctor.html"
+            <a
+              class="button intro_text"
+              href="/src/Pages/About/about_doctor.html"
               >Learn More</a
             >
           </div>
@@ -191,20 +195,74 @@
     <section id="deliveries">
       <h2 class="secondary_heading">Successful Deliveries <span></span></h2>
       <div class="images">
-        <div>
-          <img src="../images/pic1.png" alt="" />
+        <div class="delivery delivery-1">
+          <img src="/images/pic1.png" alt="" />
         </div>
-        <div>
-          <img src="../images/pic2.png" alt="" />
+        <div class="delivery delivery-2">
+          <img src="/images/pic2.png" alt="" />
         </div>
-        <div>
-          <img src="../images/pic3.png" alt="" />
+        <div class="delivery delivery-3">
+          <img src="/images/pic3.png" alt="" />
         </div>
-        <div>
-          <img src="../images/pic4.png" alt="" />
+        <div class="delivery delivery-4">
+          <img src="/images/pic4.png" alt="" />
+        </div>
+        <div class="delivery delivery-5">
+          <img src="/images/pic5.png" alt="" />
+        </div>
+        <div class="delivery delivery-6">
+          <img src="/images/pic6.png" alt="" />
         </div>
       </div>
-      <a class="button" href="#">See More</a>
+      <!-- <a class="button" href="#">See More</a> -->
+    </section>
+
+    <section id="services">
+      <h2 class="secondary_heading">FERTILITY SERVICES <span></span></h2>
+      <ul>
+        <li class="service service-1">IN VITRO FERTILISATION</li>
+        <li class="service service-2">IUI - Intra Uterine Insemination</li>
+        <li class="service service-3">PRE - GENETIC SCREENING AND DIAGNOSIS</li>
+        <li class="service service-4">INTRA CYTOPLASMIC SPERM INJECTION</li>
+        <li class="service service-5">PGS/ PGD FOR GENETIC PROBLEMS</li>
+        <li class="service service-6">FOLLICULAR MONITORING AND SONOGRAPHY</li>
+        <li class="service service-7">
+          HYSTEROSCOPY BOTH DIAGNOSTIC AND OPERATIVE HYSTEROSCOPY
+        </li>
+        <li class="service service-8">
+          LAPAROSCOPY FOR TUBAL PATENCY, ENDOMETRIOSIS, FIBROIDS AND Etc
+        </li>
+      </ul>
+    </section>
+
+    <section id="appointment_form">
+      <div class="cover">
+        <form>
+          <h2>Get in touch today!</h2>
+          <div class="field">
+            <label for="name">Name*</label>
+            <input type="text" placeholder="Name" id="name" required />
+          </div>
+          <div class="field">
+            <label for="number">Number*</label>
+            <input type="tel" placeholder="Number" id="number" required />
+          </div>
+          <div class="field">
+            <label for="email">Email*</label>
+            <input type="email" placeholder="Email" id="email" required />
+          </div>
+          <div class="field">
+            <label for="message">Message(optional)</label>
+            <textarea
+              name=""
+              id="message"
+              cols="30"
+              rows="5"
+              placeholder="Any question?"></textarea>
+          </div>
+          <button>Book Appointment</button>
+        </form>
+      </div>
     </section>
 
     <section class="queries_section">
@@ -243,6 +301,25 @@
             <details>
               <summary>
                 <span class="extend">+</span>
+                <span role="term" aria-details="pure-css"
+                  >Why opt for In-Vitro Fertilization(IVF)?</span
+                >
+              </summary>
+            </details>
+            <div role="definition" id="pure-css" class="content">
+              <p>
+                One of the major reasons why couples choose IVF is due to
+                infertility issues. For women, these issues may include problems
+                with the uterus or fallopian tubes, poor egg quality, and
+                improper ovulation. Similarly, men may face challenges such as
+                low sperm counts and low sperm motility.
+              </p>
+            </div>
+          </div>
+          <div class="query query-3">
+            <details>
+              <summary>
+                <span class="extend">+</span>
 
                 <span role="term" aria-details="pure-css"
                   >Is In Vitro Fertilization Expensive?</span
@@ -258,7 +335,7 @@
               </p>
             </div>
           </div>
-          <div class="query query-3">
+          <div class="query query-4">
             <details>
               <summary>
                 <span class="extend">+</span>
@@ -281,32 +358,6 @@
       </div>
     </section>
 
-    <section id="appointment_form">
-      <div class="cover">
-        <form>
-          <h2>Get in touch today!</h2>
-          <div class="field">
-            <input type="text" placeholder="Name" />
-          </div>
-          <div class="field">
-            <input type="tel" placeholder="Number" />
-          </div>
-          <div class="field">
-            <input type="email" placeholder="Email" />
-          </div>
-          <div class="field">
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="10"
-              placeholder="Any question?"></textarea>
-          </div>
-          <button>Book Appointment</button>
-        </form>
-      </div>
-    </section>
-
     <div class="contact">
       <div class="connect call">
         <a href="tel:+918511703318">
@@ -326,62 +377,59 @@
     </div>
 
     <footer>
-      <div id="footer_contact">
-        <div class="logo">
-          <img src="images/footer_logo.png" alt="" />
-          <h5>APEX</h5>
-        </div>
-        <div id="contactus">
-          <div class="phone__email">
-            <div>
-              <h4>
-                <!-- <i class="fa-solid fa-phone"></i> -->
-                Phone:
-              </h4>
+      <div class="footer">
+        <div id="footer_contact">
+          <div class="logo">
+            <img src="images/footer_logo.png" alt="" />
+            <!-- <h5>APEX</h5> -->
+          </div>
+          <div id="contactus">
+            <div class="phone__email">
+              <h4>Contacts</h4>
               <a href="tel:+918511703318">
                 <p>(+91)851-170-3318</p>
               </a>
-            </div>
-            <div>
-              <h4>
-                <!-- <i class="fa-regular fa-envelope"></i> -->
-                Email:
-              </h4>
               <a href="mailto:dr.vinuta@gmail.com">
                 <p>dr.vinuta@gmail.com</p>
               </a>
             </div>
+            <div id="social_media">
+              <h4>Socials</h4>
+              <div class="socials">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a
+                  href="https://www.linkedin.com/in/dr-vinuta-kulkarni-72620421/?originalSubdomain=in">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="#"> <i class="fa-brands fa-twitter"></i> </a>
+              </div>
+            </div>
           </div>
-          <div id="social_media">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
-            <a
-              href="https://www.linkedin.com/in/dr-vinuta-kulkarni-72620421/?originalSubdomain=in">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a href="#"> <i class="fa-brands fa-twitter"></i> </a>
+        </div>
+        <div class="location">
+          <div class="address">
+            <h4>Address:</h4>
+            <p>
+              Srishti Advanced Fertility and Endoscopy, 2nd floor, ashoka
+              hospital, behind Amruth Theatre Road, Vidya Nagar, Hubballi,
+              Karnataka 580021
+            </p>
+          </div>
+          <div class="mapouter">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2053.4256507310192!2d75.12963956408498!3d15.360361923284913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb8d7344c1d2311%3A0xed281de913e93fef!2sSrishti%20Advanced%20Fertility%20and%20Endoscopy%20(SAFE)!5e0!3m2!1sen!2sin!4v1701707619659!5m2!1sen!2sin"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>
-      <div class="location">
-        <div class="address">
-          <h4>Address:</h4>
-          <p>
-            Srishti Advanced Fertility and Endoscopy, 2nd floor, ashoka
-            hospital, behind Amruth Theatre Road, Vidya Nagar, Hubballi,
-            Karnataka 580021
-          </p>
-        </div>
-        <div class="mapouter">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2053.4256507310192!2d75.12963956408498!3d15.360361923284913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb8d7344c1d2311%3A0xed281de913e93fef!2sSrishti%20Advanced%20Fertility%20and%20Endoscopy%20(SAFE)!5e0!3m2!1sen!2sin!4v1701707619659!5m2!1sen!2sin"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+      <div class="copyright">
+        &copy; Copyright 2023 | Developed by
+        <a href="https://its-mine.netlify.app/">Krishna Khandelwal</a>
       </div>
-      <!-- <div>Copyright © 2023 | Apex Fertility clinic</div> -->
     </footer>
 
     <script src="../src/Home/home.js"></script>

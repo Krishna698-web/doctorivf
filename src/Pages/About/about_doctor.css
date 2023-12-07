@@ -20,6 +20,7 @@ body {
 
 .doctor_image {
   position: relative;
+  height: max-content;
 }
 
 .doctor_image img {

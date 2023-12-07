@@ -1,0 +1,64 @@
+#services {
+  margin-top: 5rem;
+  width: 100%;
+  padding: 2rem;
+}
+
+#services h2 span {
+  width: 15rem;
+}
+
+#services ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#services ul li {
+  font-family: "Ubuntu";
+  font-size: 1.1rem;
+  padding: 10px 0;
+  list-style: none;
+  text-align: center;
+  border-bottom: 2px solid lightgray;
+}
+
+/*-------- Intersection Animation properties-------- */
+.service {
+  opacity: 0;
+  transform: translateY(6rem) scale(0.5);
+  transition: all 0.5s;
+}
+
+.service-2 {
+  transition-delay: 0.1s;
+}
+.service-3 {
+  transition-delay: 0.15s;
+}
+.service-4 {
+  transition-delay: 0.2s;
+}
+.service-5 {
+  transition-delay: 0.25s;
+}
+.service-6 {
+  transition-delay: 0.3s;
+}
+.service-7 {
+  transition-delay: 0.35s;
+}
+.service-8 {
+  transition-delay: 0.4s;
+}
+
+.service_scroll_animation {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+@media only screen and (min-width: 768px) {
+  #services ul li {
+    font-size: 1.5rem;
+  }
+}

@@ -4,7 +4,7 @@ h2.secondary_heading {
   text-align: center;
   position: relative;
   color: #082032;
-  padding: 0 0.8rem;
+  /* padding: 0 0.8rem; */
   font-family: "B612", sans-serif;
 }
 
@@ -14,7 +14,7 @@ h2.secondary_heading span {
   margin: 0 auto;
   position: relative;
   z-index: -1;
-  transform: translateY(-12px);
+  transform: translateY(-15px);
   background: #fcd675de;
 }
 

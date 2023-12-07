@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=B612:wght@400;700&family=Nunito+Sans:opsz,wght@6..12,200&family=Roboto:wght@500&family=Ubuntu:wght@500&display=swap");
 @import url("../style/achivements.css");
-@import url("../style/form.css");
-@import url("../style/stories.css");
 @import url("../style/shortintro.css");
 @import url("../style/ivf_process.css");
-@import url("../style/queries.css");
 @import url("../style/contact.css");
+@import url("../style/deliveries.css");
+@import url("../style/queries.css");
+@import url("../style/services.css");
+@import url("../style/form.css");
 @import url("../style/footer.css");
 
 @import url("../style/heading.css");
@@ -38,6 +39,7 @@ h4 {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 #head_contact {
@@ -127,10 +129,32 @@ a {
 .header_image {
   position: relative;
 }
-.header_image img {
+.header_image .dummy_doctor img {
   display: block;
   margin: 0 auto;
   width: 90%;
+}
+
+.header_image .dummy {
+  position: absolute;
+  border-radius: 5rem;
+  padding: 12px 15px;
+  text-align: center;
+}
+.header_image .dummy img {
+  height: 2.5rem;
+}
+.header_image .dummy-1 {
+  left: 2rem;
+  top: 8rem;
+  background: #fca24f;
+  animation: fromtop 2s ease-in-out;
+}
+.header_image .dummy-2 {
+  right: 2rem;
+  bottom: 8rem;
+  background: #0ed3b0;
+  animation: frombottom 2s ease-in-out;
 }
 
 #heading {
@@ -144,31 +168,6 @@ a {
 
 #heading h1 span {
   color: #673de6;
-}
-
-.header_image .dummy {
-  position: absolute;
-  border-radius: 5rem;
-  text-align: center;
-}
-
-.header_image .dummy-1 {
-  left: 2rem;
-  top: 10rem;
-  padding: 15px;
-  background: #fca24f;
-  animation: fromtop 2s ease-in-out;
-}
-
-.header_image .dummy-2 {
-  right: 2rem;
-  bottom: 10rem;
-  padding: 15px;
-  background: #0ed3b0;
-  animation: frombottom 2s ease-in-out;
-}
-.header_image .dummy img {
-  height: 2.5rem;
 }
 
 /* ------Events and handlers------ */
@@ -212,7 +211,7 @@ a {
     top: 0;
   }
   100% {
-    top: 10rem;
+    top: 8rem;
     opacity: 1;
   }
 }
@@ -222,7 +221,7 @@ a {
     bottom: 0;
   }
   100% {
-    bottom: 10rem;
+    bottom: 8rem;
     opacity: 1;
   }
 }
@@ -316,7 +315,7 @@ a {
     font-size: 4rem;
   }
 
-  .header_image img {
+  .header_image .dummy_doctor img {
     height: 47rem;
     width: max-content;
   }
