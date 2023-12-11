@@ -1,1 +1,64 @@
 @import url("../../style/style.css");
+
+.review_section {
+  margin-top: 5rem;
+}
+
+.review_section .reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.reviews .review {
+  /* height: 10rem; */
+  width: 90%;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  font-family: "Nunito";
+  padding: 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  /* text-align: center; */
+}
+
+.review h3 {
+  font-size: 1.5rem;
+  font-family: sans-serif;
+}
+
+.review h3 i {
+  color: #fca24f;
+  font-size: 1.8rem;
+}
+
+.review p {
+  font-size: 1.2rem;
+  margin-top: 8px;
+}
+
+.review summary span {
+  color: blue;
+  text-decoration: underline;
+}
+
+.review .read_more {
+  padding: 0 !important;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+}
+
+@media only screen and (min-width: 768px) {
+  .review_section .reviews {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .reviews .review {
+    width: 25%;
+  }
+}
