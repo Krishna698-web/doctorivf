@@ -2,25 +2,49 @@
   margin-top: 5rem;
   width: 100%;
   padding: 2rem;
+  background: #f7fbff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
 }
 
 #services h2 span {
   width: 15rem;
 }
 
-#services ul {
+.service_section {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
 }
-
-#services ul li {
+.service_section h3 {
+  font-size: 2rem;
+  font-family: "B612";
+  color: #343d48;
+  margin-bottom: 1.2rem;
+  letter-spacing: 1px;
+  text-align: left;
+}
+.service_section img {
+  width: 100%;
+}
+.service_section ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.service_section ul li {
   font-family: "Ubuntu";
   font-size: 1.1rem;
   padding: 10px 0;
   list-style: none;
-  text-align: center;
   border-bottom: 2px solid lightgray;
+}
+
+.service_button {
+  display: block;
+  margin: 2rem auto;
 }
 
 /*-------- Intersection Animation properties-------- */
@@ -58,7 +82,23 @@
 }
 
 @media only screen and (min-width: 768px) {
+  #services {
+    padding: 5rem;
+    justify-content: center;
+  }
+
   #services ul li {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+  }
+
+  .service_section {
+    width: 70%;
+    flex-direction: row;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .service_section ul {
+    align-items: flex-start;
   }
 }

@@ -10,7 +10,7 @@
       integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <title>Document</title>
   </head>
 
@@ -47,17 +47,25 @@
             <a href="#">Home</a>
           </li>
           <li>
-            <a href="#">Services</a>
+            <a href="/src/Pages/Services/services.html">Services</a>
           </li>
           <li>
             <a href="/src/Pages/About/about_doctor.html">About</a>
           </li>
-          <a href="/src/Pages/Contactus/contactus.html" class="nav-button"
-            >Contact us</a
-          >
+          <li>
+            <a href="/src/Pages/Contactus/contactus.html">Contact us</a>
+          </li>
+          <!-- <li class="call">
+            <a href="tel:+918511703318">
+              <i class="fa-solid fa-phone"></i>
+              <span>Call us</span>
+            </a>
+          </li> -->
         </ul>
       </nav>
+    </header>
 
+    <section>
       <div id="container">
         <div class="header_image">
           <div class="dummy_doctor">
@@ -78,7 +86,7 @@
           </h1>
         </div>
       </div>
-    </header>
+    </section>
 
     <!-- Achievement Container -->
     <section id="achievemets_collection">
@@ -89,8 +97,8 @@
       </div>
       <div class="card card-2">
         <i class="fa-solid fa-baby-carriage"></i>
-        <span>20+</span>
-        <p>Successful Pregnancies</p>
+        <span>1000+</span>
+        <p>Successful Deliveries</p>
       </div>
       <div class="card card-3">
         <i class="fa-solid fa-medal"></i>
@@ -107,23 +115,30 @@
           <img src="../images/vectors/ovarian_stimulation.png" alt="" />
           <h3>1. Ovarian Stimulation</h3>
           <p>
-            The woman receives fertility medications to stimulate multiple egg
-            production.
+            A woman seeking to conceive undergoes fertility treatment, receiving
+            various medications in the form of tablets and injections. The
+            process includes continuous monitoring of follicle development
+            through ultrasonography.
           </p>
         </div>
         <div class="step step-2">
           <img src="../images/vectors/egg_retrieval.png" alt="" />
           <h3>2. Egg Retrieval</h3>
           <p>
-            Eggs are collected from the ovaries using a minimally invasive
-            procedure.
+            Follicle retrieval, performed under ultrasound guidance, involves
+            screening follicular fluid for eggs in a day care procedure that
+            requires anesthesia.
           </p>
         </div>
         <div class="step step-3">
           <img src="../images/vectors/sperm_collection.png" alt="" />
           <h3>3. Sperm collection</h3>
           <p>
-            The male partner provides a sperm sample or donor sperm is used.
+            The partner is requested to provide semen through masturbation. In
+            cases of severe male factor infertility or zero sperm count,
+            bloodless surgical techniques can be employed for sperm retrieval.
+            Alternatively, donor sperm is considered when using one's own
+            gametes is not feasible.
           </p>
         </div>
         <div class="step step-4">
@@ -138,23 +153,26 @@
           <img src="../images/vectors/embryo_culture.png" alt="" />
           <h3>5. Embryo Culture</h3>
           <p>
-            Fertilized eggs (embryos) are cultured for a few days to develop
-            further.
+            The sperm-injected oocyte is cultured in sophisticated incubators
+            for 5-6 days to develop into an embryo.
           </p>
         </div>
         <div class="step step-6">
           <img src="../images/vectors/embryo_transfer.png" alt="" />
           <h3>6. Embryo Transfer</h3>
           <p>
-            One or more embryos are carefully place into the woman's uterus.
+            A highly skilled yet simple technique involves transferring one or
+            more embryos into the uterus using an embryo transfer catheter under
+            ultrasound guidance. Typically, this procedure does not require
+            anesthesia.
           </p>
         </div>
         <div class="step step-7">
           <img src="../images/vectors/hormonal_support.png" alt="" />
           <h3>7. Harmonal Suppport</h3>
           <p>
-            Hormonal support is given to aid embryo implantation into womens
-            body.
+            Luteal support is provided through estrogen and progesterone tablets
+            or injections to aid embryo implantation.
           </p>
         </div>
         <div class="step step-8">
@@ -218,21 +236,33 @@
     </section>
 
     <section id="services">
-      <h2 class="secondary_heading">FERTILITY SERVICES <span></span></h2>
-      <ul>
-        <li class="service service-1">IN VITRO FERTILISATION</li>
-        <li class="service service-2">IUI - Intra Uterine Insemination</li>
-        <li class="service service-3">PRE - GENETIC SCREENING AND DIAGNOSIS</li>
-        <li class="service service-4">INTRA CYTOPLASMIC SPERM INJECTION</li>
-        <li class="service service-5">PGS/ PGD FOR GENETIC PROBLEMS</li>
-        <li class="service service-6">FOLLICULAR MONITORING AND SONOGRAPHY</li>
-        <li class="service service-7">
-          HYSTEROSCOPY BOTH DIAGNOSTIC AND OPERATIVE HYSTEROSCOPY
-        </li>
-        <li class="service service-8">
-          LAPAROSCOPY FOR TUBAL PATENCY, ENDOMETRIOSIS, FIBROIDS AND Etc
-        </li>
-      </ul>
+      <div class="service_section">
+        <img src="/images/service.png" alt="" />
+        <div>
+          <h3>FERTILITY SERVICES</h3>
+          <ul>
+            <li class="service service-1">IN VITRO FERTILISATION</li>
+            <li class="service service-2">IUI - Intra Uterine Insemination</li>
+            <li class="service service-3">
+              PRE - GENETIC SCREENING AND DIAGNOSIS
+            </li>
+            <li class="service service-4">INTRA CYTOPLASMIC SPERM INJECTION</li>
+            <li class="service service-5">PGS/ PGD FOR GENETIC PROBLEMS</li>
+            <li class="service service-6">
+              FOLLICULAR MONITORING AND SONOGRAPHY
+            </li>
+            <li class="service service-7">
+              HYSTEROSCOPY BOTH DIAGNOSTIC AND OPERATIVE HYSTEROSCOPY
+            </li>
+            <li class="service service-8">
+              LAPAROSCOPY FOR TUBAL PATENCY, ENDOMETRIOSIS, FIBROIDS AND Etc
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a class="button service_button" href="/src/Pages/Services/services.html"
+        >Learn More</a
+      >
     </section>
 
     <section id="appointment_form">
@@ -289,7 +319,7 @@
                 >
               </summary>
             </details>
-            <div role="definition" id="pure-css" class="content">
+            <div class="content">
               <p>
                 A process of fertilizing an egg with sperm from outside the
                 woman's body. The egg is then placed back inside her uterus to
@@ -306,7 +336,7 @@
                 >
               </summary>
             </details>
-            <div role="definition" id="pure-css" class="content">
+            <div class="content">
               <p>
                 One of the major reasons why couples choose IVF is due to
                 infertility issues. For women, these issues may include problems
@@ -320,13 +350,12 @@
             <details>
               <summary>
                 <span class="extend">+</span>
-
                 <span role="term" aria-details="pure-css"
                   >Is In Vitro Fertilization Expensive?</span
                 >
               </summary>
             </details>
-            <div role="definition" id="pure-css" class="content">
+            <div class="content">
               <p>
                 Similar to other complex medical treatments, IVF involves highly
                 skilled professionals, advanced laboratories, and equipment.
@@ -345,7 +374,7 @@
                 >
               </summary>
             </details>
-            <div role="definition" id="pure-css" class="content">
+            <div class="content">
               <p>
                 Absolutely from 1985 to 2017, there were 1,204,594 reported
                 births resulting from Assisted Reproductive Technology
@@ -369,11 +398,6 @@
           <i class="fa-brands fa-whatsapp"></i>
         </a>
       </div>
-      <!-- <div class="connect email">
-        <a href="mailto:dr.vinuta@gmail.com"
-          ><i class="fa-regular fa-envelope"></i
-        ></a>
-      </div> -->
     </div>
 
     <footer>

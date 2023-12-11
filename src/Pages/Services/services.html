@@ -4,16 +4,203 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="../../Components/Navbar.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+
     <link rel="stylesheet" href="services.css" />
   </head>
-  <style>
-    h2 {
-      color: blue;
-    }
-  </style>
   <body>
-    <h2>blue</h2>
-    <nav-bar></nav-bar>
+    <header class="" id="home">
+      <div id="head_contact">
+        <div id="contactus">
+          <div>
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+918511703318">
+              <p>(+91)851-170-3318</p>
+            </a>
+          </div>
+          <div>
+            <i class="fa-regular fa-envelope"></i>
+            <a href="mailto:dr.vinuta@gmail.com">
+              <p>dr.vinuta@gmail.com</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation menu -->
+      <nav id="navbar">
+        <a href="../../../index.html" class="logo">
+          <img src="/images/logo.JPG" alt="" />
+        </a>
+        <label id="hamburger" for="check_menu"
+          ><span></span><span></span><span></span
+        ></label>
+        <input type="checkbox" id="check_menu" />
+        <ul id="navigation">
+          <li>
+            <a href="../../../index.html">Home</a>
+          </li>
+          <li>
+            <a href="#">Services</a>
+          </li>
+          <li>
+            <a href="/src/Pages/About/about_doctor.html">About</a>
+          </li>
+          <li>
+            <a href="/src/Pages/Contactus/contactus.html">Contact us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="services">
+      <div class="service_heading">
+        <h2 class="secondary_heading">Our Services</h2>
+        <p>
+          We provide personalized fertility consultations, cutting-edge
+          reproductive technologies, and compassionate support throughout your
+          journey to parenthood.
+        </p>
+      </div>
+      <div class="treatments">
+        <div class="treatment">
+          <h3>IVF-ICSI (Intracytoplasmic Sperm Injection)</h3>
+          <img src="/images/services/icsi.jpg" alt="" />
+          <p>
+            This is a highly specialized technique in infertility treatment,
+            wherein a morphologically optimal sperm is injected into the egg and
+            cultured in an incubator to form an embryo. This process requires a
+            highly skilled embryologist and a tailored stimulation protocol,
+            where the patient receives hormonal injections for 10 days followed
+            by a trigger. Success rates vary across different centers, but with
+            our expertise and robust Standard Operating Procedures (SOPs), we
+            consistently achieve a success rate of 80% or higher.
+          </p>
+        </div>
+        <div class="treatment">
+          <h3>IUI — Intra-uterine Insemination</h3>
+          <img src="/images/services/iui.jpg" alt="" />
+          <p>
+            IUI is a straightforward infertility treatment. The process begins
+            with ovarian stimulation using tablets and minimal injections,
+            monitored through serial ultrasound scans. Once the follicle reaches
+            a size of 18-20 mm, a trigger injection is administered, and IUI is
+            scheduled after 36 hours. Semen preparation involves collecting
+            ejaculate, processing it in the andrology laboratory using density
+            gradient media. The processed and washed sample is then inseminated
+            into the uterus through the vagina using a simple, non-anesthetic
+            technique. A pregnancy test is conducted after 15 days, supported by
+            luteal phase support.
+          </p>
+        </div>
+        <div class="treatment">
+          <h3>PGS/PGD (Preimplantation Genetic Screening/ Diagnosis)</h3>
+          <img src="/images/services/pgs.jpg" alt="" />
+          <p>
+            This technique proves to be a boon for couples facing multiple
+            failed IVFs and recurrent implantation failure. The procedure
+            entails biopsying the day 5 embryo (blastocyst), conducting various
+            genetic tests to diagnose multiple inherited diseases, aneuploidies,
+            and rare genetic conditions.
+          </p>
+        </div>
+        <div class="treatment">
+          <h3>
+            TESA/TESE/MICRO-TESE (Testicular Sperm Aspiration/ Extraction)
+          </h3>
+          <img src="/images/services/tese.png" alt="" />
+          <p>
+            Is a surgical procedure used to retrieve sperm directly from the
+            testicles, especially in cases of non-obstructive azoospermia where
+            natural sperm production is insufficient. Typically performed under
+            anesthesia, this involves removing a small piece of testicular
+            tissue for examination and identification of viable sperm. This
+            minimally invasive day care surgery is vital for individuals with
+            conditions like testicular failure. The retrieved sperm can be
+            utilized in assisted reproductive technologies such as in vitro
+            fertilization (IVF) or intracytoplasmic sperm injection (ICSI) to
+            aid in achieving pregnancy.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="contact">
+      <div class="connect call">
+        <a href="tel:+918511703318">
+          <i class="fa-solid fa-phone"></i>
+        </a>
+      </div>
+      <div class="connect whatsapp">
+        <a href="https://wa.me/918511703318">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <div id="footer_contact">
+          <div class="logo">
+            <img src="/images/footer_logo.png" alt="" />
+            <!-- <h5>APEX</h5> -->
+          </div>
+          <div id="contactus">
+            <div class="phone__email">
+              <h4>Contacts</h4>
+              <a href="tel:+918511703318">
+                <p>(+91)851-170-3318</p>
+              </a>
+              <a href="mailto:dr.vinuta@gmail.com">
+                <p>dr.vinuta@gmail.com</p>
+              </a>
+            </div>
+            <div id="social_media">
+              <h4>Socials</h4>
+              <div class="socials">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a
+                  href="https://www.linkedin.com/in/dr-vinuta-kulkarni-72620421/?originalSubdomain=in">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="#"> <i class="fa-brands fa-twitter"></i> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="location">
+          <div class="address">
+            <h4>Address:</h4>
+            <p>
+              Srishti Advanced Fertility and Endoscopy, 2nd floor, ashoka
+              hospital, behind Amruth Theatre Road, Vidya Nagar, Hubballi,
+              Karnataka 580021
+            </p>
+          </div>
+          <div class="mapouter">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2053.4256507310192!2d75.12963956408498!3d15.360361923284913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb8d7344c1d2311%3A0xed281de913e93fef!2sSrishti%20Advanced%20Fertility%20and%20Endoscopy%20(SAFE)!5e0!3m2!1sen!2sin!4v1701707619659!5m2!1sen!2sin"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        &copy; Copyright 2023 | Developed by
+        <a href="https://its-mine.netlify.app/">Krishna Khandelwal</a>
+      </div>
+    </footer>
+
+    <script src="../../Home/home.js"></script>
+    <script src="/src/js/animation_observer.js"></script>
   </body>
 </html>

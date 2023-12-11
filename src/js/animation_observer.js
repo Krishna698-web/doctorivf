@@ -34,7 +34,7 @@ const steps_observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.5 }
+  { threshold: 0 }
 );
 
 for (let i = 0; i < steps.length; i++) {
@@ -55,8 +55,8 @@ const intro_text_observer = new IntersectionObserver(
         entry.target.classList.remove("text_scroll_animation");
       }
     });
-  },
-  { threshold: 0.5 }
+  }
+  // { threshold: 0 }
 );
 
 for (let i = 0; i < intro_text.length; i++) {
@@ -77,8 +77,8 @@ const deliveries_observer = new IntersectionObserver(
         entry.target.classList.remove("delivery_scroll_animation");
       }
     });
-  },
-  { threshold: 0.5 }
+  }
+  // { threshold: 0 }
 );
 
 for (let i = 0; i < deliveries.length; i++) {
@@ -99,11 +99,33 @@ const services_observer = new IntersectionObserver(
         entry.target.classList.remove("service_scroll_animation");
       }
     });
-  },
-  { threshold: 0.5 }
+  }
+  // { threshold: 0.5 }
 );
 
 for (let i = 0; i < services.length; i++) {
   const service = services[i];
   services_observer.observe(service);
+}
+
+// Specialities animation observer
+
+const specialities = document.querySelectorAll(".speciality");
+
+const specialities_observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("speciality_scroll_animation");
+      } else {
+        entry.target.classList.remove("speciality_scroll_animation");
+      }
+    });
+  }
+  // { threshold: 0.5 }
+);
+
+for (let i = 0; i < specialities.length; i++) {
+  const speciality = specialities[i];
+  specialities_observer.observe(speciality);
 }

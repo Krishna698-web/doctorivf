@@ -1,1 +1,83 @@
 @import url("../../style/style.css");
+
+.services {
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
+.services h2 span {
+  width: 10rem;
+}
+
+.service_heading {
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.service_heading p {
+  color: gray;
+}
+
+.treatments {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.treatment {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.treatment h3 {
+  color: #343d48;
+  font-family: "B612";
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.treatment img {
+  width: 100%;
+  height: 17rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+}
+
+@media only screen and (min-width: 768px) {
+  .services {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .service_heading p {
+    /* width: 60%; */
+    padding: 0 35rem;
+    font-size: 1.2rem;
+    /* background: lightcoral; */
+  }
+
+  .treatments {
+    margin: 3rem auto;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .treatment h3 {
+    font-size: 1.8rem;
+  }
+
+  .treatment img {
+    height: 30rem;
+
+    width: max-content;
+  }
+  .treatment p {
+    line-height: 2rem;
+  }
+}

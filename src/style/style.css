@@ -5,7 +5,7 @@
 @import url("../style/contact.css");
 @import url("../style/deliveries.css");
 @import url("../style/queries.css");
-@import url("../style/services.css");
+@import url("../style/fertility_services.css");
 @import url("../style/form.css");
 @import url("../style/footer.css");
 
@@ -82,21 +82,21 @@ a {
 }
 
 #navigation {
-  /* display: none; */
-  width: 80%;
-  height: 100vh;
+  width: 100%;
   position: absolute;
-  top: 4.5rem;
+  top: 4rem;
   right: -35rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: flex-end;
+  align-items: flex-end;
   gap: 1.2rem;
+  z-index: 0;
+  opacity: 0;
   padding: 1rem 1.5rem;
   background: white;
-  box-shadow: -2px 2px 1rem -10px black;
-  transition: all 0.3s ease-out;
+  box-shadow: 0 2px 1rem -12px black;
+  transition: all 0.5s ease-in;
 }
 
 #navigation li {
@@ -109,17 +109,8 @@ a {
   letter-spacing: 1.3px;
 }
 
-#navigation .nav-button {
-  color: #673de6;
-  border: none;
-  border-radius: 2rem;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  letter-spacing: 1.2px;
-  cursor: pointer;
-  border: 2px solid #673de6;
-  background: transparent;
-  transition: 0.2s;
+#navigation li.call {
+  display: block;
 }
 
 #container {
@@ -138,21 +129,21 @@ a {
 .header_image .dummy {
   position: absolute;
   border-radius: 5rem;
-  padding: 12px 15px;
+  padding: 12px 14px;
   text-align: center;
 }
 .header_image .dummy img {
-  height: 2.5rem;
+  height: 2rem;
 }
 .header_image .dummy-1 {
   left: 2rem;
-  top: 8rem;
+  top: 6rem;
   background: #fca24f;
   animation: fromtop 2s ease-in-out;
 }
 .header_image .dummy-2 {
   right: 2rem;
-  bottom: 8rem;
+  bottom: 6rem;
   background: #0ed3b0;
   animation: frombottom 2s ease-in-out;
 }
@@ -188,7 +179,12 @@ a {
 }
 
 #check_menu:checked + #navigation {
-  right: 0rem;
+  opacity: 1;
+  right: 0;
+}
+
+#hamburger:focus #hamburger span {
+  /* transform: scale(2); */
 }
 
 /* input[type="checkbox"]:checked label {
@@ -211,7 +207,7 @@ a {
     top: 0;
   }
   100% {
-    top: 8rem;
+    top: 6rem;
     opacity: 1;
   }
 }
@@ -221,7 +217,7 @@ a {
     bottom: 0;
   }
   100% {
-    bottom: 8rem;
+    bottom: 6rem;
     opacity: 1;
   }
 }
@@ -256,9 +252,6 @@ a {
     display: flex;
   }
 
-  #contactus a {
-  }
-
   #navbar {
     top: 3rem;
     justify-content: space-around;
@@ -272,6 +265,7 @@ a {
   }
 
   #navigation {
+    opacity: 1;
     padding: 0;
     width: 100%;
     display: flex;
@@ -282,7 +276,6 @@ a {
     width: max-content;
     top: 0;
     left: 0;
-    /* background: black; */
     box-shadow: none;
     font-weight: 500;
   }
@@ -291,10 +284,8 @@ a {
     font-weight: 500;
   }
 
-  #navigation .nav-button {
-    color: #673de6;
-    border: 1px solid #673de6;
-    padding: 0.7rem 1.5rem;
+  #navigation li.call {
+    display: none;
   }
 
   #container {
@@ -318,6 +309,36 @@ a {
   .header_image .dummy_doctor img {
     height: 47rem;
     width: max-content;
+  }
+
+  .header_image .dummy-1 {
+    left: 2rem;
+    top: 12rem;
+  }
+  .header_image .dummy-2 {
+    right: 2rem;
+    bottom: 8rem;
+  }
+
+  @keyframes fromtop {
+    0% {
+      opacity: 0;
+      top: 0;
+    }
+    100% {
+      top: 12rem;
+      opacity: 1;
+    }
+  }
+  @keyframes frombottom {
+    0% {
+      opacity: 0;
+      bottom: 0;
+    }
+    100% {
+      bottom: 8rem;
+      opacity: 1;
+    }
   }
 }
 

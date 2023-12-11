@@ -6,6 +6,7 @@ h2.secondary_heading {
   color: #082032;
   /* padding: 0 0.8rem; */
   font-family: "B612", sans-serif;
+  z-index: 0;
 }
 
 h2.secondary_heading span {

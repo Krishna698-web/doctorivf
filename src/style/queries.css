@@ -54,7 +54,7 @@ div.content {
   max-width: 500px;
   max-height: 0;
   overflow: hidden;
-  padding: 8px 2rem;
+  padding: 8px 1.5rem;
   line-height: 2rem;
   border: 2px solid transparent;
   transition: 0.5s;
