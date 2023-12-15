@@ -12,6 +12,17 @@
 @import url("../style/heading.css");
 @import url("../style/button.css");
 
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: #673de6;
+}
+
+::selection {
+  color: white;
+  background: #673de6;
+}
+
 * {
   margin: 0;
   padding: 0;

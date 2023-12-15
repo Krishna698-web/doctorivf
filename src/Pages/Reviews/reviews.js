@@ -26,9 +26,15 @@ const reviews = [
   },
   {
     id: 5,
-    heading: "Mrs. Akshata",
+    heading: "Akshata",
     content:
       "Dr. Vinuta madam, I want to express my deepest gratitude for the role you played in the journey towards motherhood. I was unable to conceive after trying for many years but after consulting you made my dream of becoming a mother as reality From infertility to laproscopy, pregnancy and 9 months you reassured to give me strength and complete care through all ups and downs. I feel very fortunate to have u as my IVF doctor. Thankyou from bottom of my heart for the positive impact you have had in my life and giving me the greatest gift imaginable Thank you ..",
+  },
+  {
+    id: 6,
+    heading: "Soniya",
+    content:
+      "Respected, Dr.Vinuta Kulkarni Madam Hello Mam.. Myself is Soniya this is the journey of my pregnancy want to say abt.. Since, 17yrs i have not being concieving ratherly, before i met u i completely lost my hope.. But after i met u i got a hope that i can still b mom to be.. Because ur very kind, understanding & polite in every situation or we can say in the journey of pregnancy treatment.. Without ur support we r unable to across this journey & very graceful to say that now i'm 4months pregnant 🤰wit my baby bumb.. All thanks to u vinuta mam ur truly Adorable & God for us to make my wish cum true..We can Happily say that we are.. Parent to be now👨‍👩‍👦 Thanking you~Very kind hearted Dr.Vinuta Kulkarni Madam❤",
   },
 ];
 
